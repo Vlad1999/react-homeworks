@@ -1,0 +1,52 @@
+#area{
+    width: 306px;
+    height: 350px;
+    padding: 5px;
+    font-size: 15pt;
+    word-wrap: break-word;
+    overflow:scroll;
+    border: 2px solid #ccc;
+    pointer-events: none;  
+}
+#area span{
+    cursor: text;
+}
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+.inputDiv{
+    margin-top: 5px;
+}
+#input {
+    width: 316px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    font-size: 15pt;
+}
+#workspace button {
+    width: 50px;
+    margin: 5px auto;
+    background-color: #d9d9d9;
+}
+#workspace button:hover{
+    width: 50px;
+    margin: 5px auto;
+    background-color: #999999;
+}
+#red{
+    background-color: #EC1C24 !important;
+}
+#green{
+    background-color: #045530 !important;
+}
+#red:hover{
+    background-color:   #ec1c23ce  !important;
+}
+#green:hover{
+    background-color: #045530de !important;
+}

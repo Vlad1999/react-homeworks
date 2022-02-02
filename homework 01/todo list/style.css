@@ -1,0 +1,30 @@
+ul {
+    width: 500px;
+    margin: 0 ;
+    padding: 0;
+    border-radius: 4px;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li:nth-child(odd) {
+    background: #E8E7D1;
+}
+ul li:hover{
+    font-size: 17px;
+    background-color: #6B7C60;
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="personalInfoForm">
+        <form  id="infoForm" action="#">
+            <label for="name">Name</label><br>
+            <input id="name" type="text" name="name" placeholder="Name" required><br>
+            <label for="email">Email</label><br>
+            <input id="email" type="email" name="email" placeholder="Email" required><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="012-345-678" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br>
+            <label for="image_uploads">Add Image</label><br>
+            <input id="image_uploads" type="file" name="image_uploads" accept=".jpg, .jpeg, .png"><br>
+            <label >Birthday</label><br>
+            <div class="birthday">
+                <select name="day" id="day" required>
+                    <option value="" disabled selected hidden>Day</option>
+                </select><br>
+                <select name="month" id="month" required>
+                    <option value="" disabled selected hidden>Month</option>
+                </select><br>
+                <select name="year" id="year" required>
+                    <option value="" disabled selected hidden>Year</option>
+                </select><br>
+            </div>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected hidden>Choose your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="address">Address line</label><br>
+            <input id="address" type="text" name="address" placeholder="Address"><br>
+            <label for="city">City</label><br>
+            <input id="city" type="text" name="city" placeholder="City"><br>
+            <label for="state">State/Province</label><br>
+            <input id="state" type="text" name="state" placeholder="State/Province"><br>
+            <label for="country">Country</label><br>
+            <input id="country" type="text" name="country" placeholder="Country"><br>
+            <button type="submit">Submit form</button>
+        </form>
+    </div>
+    <div id="personalInfoShow" ></div>
+    <script src="script.js"></script>
+</body>
+</html>

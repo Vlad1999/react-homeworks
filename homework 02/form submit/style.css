@@ -1,0 +1,71 @@
+#personalInfoForm{
+    font-family: sans-serif;
+    color: #4C494F;  
+}
+#infoForm label{
+    font-size: 15px; 
+    font-weight: bold;
+}
+#infoForm input, select, button{
+    box-sizing: content-box;
+    width: 401px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: #4C494F;  
+    border-radius: 3px;
+    border: 0.5px solid #e1e1e1;
+    background-color: #f0f0f0;
+}
+.birthday{
+    display: flex;    
+}
+.birthday select{
+    width: 119px;
+}
+.birthday > *+*{
+    margin-left: 5px;
+}
+#frame img{
+    width: 200px;
+    height: 200px;
+    display: flex; 
+}
+.info {
+    background-color: #F2EDE9;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.123),0 4px 20px 0 rgba(0, 0, 0, 0.116);
+    width: 260px;
+    height: auto;
+    color: #4C494F;
+    font-family: "Roboto", sans-serif;
+    line-height: 31px;
+}
+.info img{
+    width: 100%;
+}   
+.allInfo{
+    padding: 10px 15px;
+}
+
+/* Color Theme Swatches in Hex */
+.af1-1-hex { color: #F2D0A7; }
+.af1-2-hex { color: #F2EDE9; }
+.af1-3-hex { color: #C3D7D8; }
+.af1-4-hex { color: #8C6E5D; }
+.af1-5-hex { color: #F2CFC2; }
+
+/* Color Theme Swatches in RGBA */
+.af1-1-rgba { color: rgba(242, 208, 167, 1); }
+.af1-2-rgba { color: rgba(242, 237, 233, 1); }
+.af1-3-rgba { color: rgba(195, 215, 216, 1); }
+.af1-4-rgba { color: rgba(140, 110, 93, 1); }
+.af1-5-rgba { color: rgba(242, 207, 194, 1); }
+
+/* Color Theme Swatches in HSLA */
+.af1-1-hsla { color: hsla(32, 74, 80, 1); }
+.af1-2-hsla { color: hsla(26, 25, 93, 1); }
+.af1-3-hsla { color: hsla(182, 21, 80, 1); }
+.af1-4-hsla { color: hsla(21, 20, 45, 1); }
+.af1-5-hsla { color: hsla(16, 64, 85, 1); }
