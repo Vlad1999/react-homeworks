@@ -1,26 +1,32 @@
 const root = document.getElementById("root");
-const results = document.getElementById('search-results');
+const results = document.getElementById("search-results");
 
 const searchForm = document.getElementById("search-form");
 const searchBox = document.getElementById("search-box");
 const searchBtn = document.getElementById("search-btn");
 
+const loading = document.createElement("img");
+loading.src = "./images/loading.gif";
+loading.className = "loading";
+
 let searchText;
 
 searchForm.reset();
 
-async function search(page=1) {
-  let container = document.createElement('div');
-  
-  let res = await fetch(`http://openlibrary.org/search.json?q=${searchText}&page=${page}`);
+async function search(page = 1) {
+  results.innerHTML = "";
+  results.appendChild(loading);
 
-  window.scrollTo(0, 0);
+  let container = document.createElement("div");
+
+  let res = await fetch(
+    `http://openlibrary.org/search.json?q=${searchText}&page=${page}`
+  );
 
   let books = await res.json();
 
-  results.innerHTML = '';
-
   books.docs.forEach((book) => {
+    results.innerHTML = "";
     container.appendChild(listItem(book));
     results.appendChild(container);
   });
@@ -30,7 +36,7 @@ async function search(page=1) {
   root.appendChild(await pagination(pages, page));
 }
 
-const container = document.createElement('div');
+const container = document.createElement("div");
 const ulTag = document.createElement("ul");
 
 async function pagination(totalPages, page) {
@@ -42,7 +48,7 @@ async function pagination(totalPages, page) {
     liTag = `<li class="active" onclick="pagination(${totalPages}, 1); search(${page});"><span>1</span></li>`;
     ulTag.innerHTML = liTag;
     container.appendChild(ulTag);
-  
+
     return container;
   }
 
@@ -115,7 +121,7 @@ function listItem(book) {
   container.appendChild(firstPublishYear);
 
   subject.textContent = book.subject
-    ? ("Subject: " + book.subject.slice(0, 5)).split(',').join(', ')
+    ? ("Subject: " + book.subject.slice(0, 5)).split(",").join(", ")
     : "No Subject!";
   container.appendChild(subject);
 
