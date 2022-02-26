@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@300&family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2CA992;
+}
+
+.movie-frame{
+    width: 710px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: justify;
+    line-height: 38px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #82D8A2;
+    color: #0A1E29;
+    box-shadow: 10px 10px 0 0 #0a1e2975;
+}

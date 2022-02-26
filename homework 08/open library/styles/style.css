@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  background: goldenrod;
+}
+
+#root h1 {
+  font-size: 70px;
+  margin: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.search,
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination ul {
+  justify-content: center;
+}
+
+#search-form {
+  display: flex;
+}
+
+#search-box {
+  width: 400px;
+  height: 50px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 50px 0 0 50px;
+  padding: 0 0 0 20px;
+  border: none;
+}
+#search-btn {
+  width: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #202020;
+  border-radius: 0 50px 50px 0;
+  border: none;
+  height: 50px;
+}
+#search-btn:hover {
+  background-color: #ffffff;
+}
+
+.pagination ul {
+  width: 360px;
+  background-color: #fff;
+  display: flex;
+  padding: 8px;
+  border-radius: 50px;
+}
+.pagination ul li {
+  width: 45px;
+  height: 45px;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 2px;
+  user-select: none;
+}
+.pagination ul li:hover {
+  background-color: rgba(218, 165, 32, 0.8);
+  color: #fff;
+  border-radius: 50px;
+}
+.pagination ul li.active {
+  background-color: goldenrod;
+  color: #fff;
+  border-radius: 50px;
+}
+.pagination ul li.dots {
+  font-size: 22px;
+  cursor: default;
+}
+.pagination ul li.dots:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#search-results {
+  display: flex;
+  justify-content: center;
+}
+
+#search-results div {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 15px;
+}
+
+#search-results div div {
+  width: 280px;
+  flex: auto;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 15px;
+}
