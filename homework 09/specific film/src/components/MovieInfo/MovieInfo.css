@@ -1,0 +1,44 @@
+.results {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.result {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 16px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.result:hover {
+  box-shadow: 3px 3px 6px #00000020;
+}
+
+.result h3 {
+  color: #888;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.result p {
+  color: #313131;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.loading, .error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.error {
+  color: crimson;
+}

@@ -1,0 +1,55 @@
+.pagination-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.pagination {
+  display: flex;
+  background: #fff;
+  padding: 6px;
+  border-radius: 16px;
+}
+.page {
+  display: flex;
+  list-style: none;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #888;
+  user-select: none;
+}
+.num,
+.link {
+  width: 40px;
+  height: 40px;
+  border-radius: 16px;
+  margin: 0 3px;
+}
+.dots {
+  font-size: 20px;
+  cursor: default;
+}
+
+.dotsLink {
+  pointer-events: none;
+}
+.prev {
+  border-radius: 16px 5px 5px 16px;
+}
+.next {
+  border-radius: 5px 16px 16px 5px;
+}
+
+.page:hover,
+.active {
+  color: #fff;
+  background: #888;
+}
+.dots:hover {
+  color: #888;
+  background: #fff;
+}
