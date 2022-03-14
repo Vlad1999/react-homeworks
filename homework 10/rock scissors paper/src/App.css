@@ -1,0 +1,53 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.choose {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.choose div {
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.choose div img {
+  width: 150px;
+}
+
+.board {
+  width: 800px;
+  height: 250px;
+  display: flex;
+  margin: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.board p {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+.ai {
+  transform: scaleX(-1);
+}
+
+.gameHistory {
+    width: 800px;
+    display: flex;
+    font-size: 32px;
+    font-weight: 300;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
