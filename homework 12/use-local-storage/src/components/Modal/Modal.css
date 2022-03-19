@@ -1,0 +1,44 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000080;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content {
+  width: 252px;
+  margin: 15% auto;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  transition: inherit;
+  opacity: 0;
+  display: none;
+  transition: 0.4s ease-in-out;
+  transform: translateY(-100px);
+  padding: 16px 20px;
+}
+
+.activeContent {
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  line-height: 26px;
+  transform: translateY(0);
+}

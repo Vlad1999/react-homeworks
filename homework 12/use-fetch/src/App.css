@@ -1,0 +1,27 @@
+.App {
+  width: 580px;
+  text-align: justify;
+  line-height: 30px;
+}
+.loading {
+  text-align: center;
+}
+.error {
+  color: crimson;
+}
+
+button {
+  height: 35px;
+  padding: 0 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1d34b8;
+}
+
+button:hover {
+  background-color: #1d34b8e8;
+}
