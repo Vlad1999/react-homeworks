@@ -1,0 +1,116 @@
+.App {
+  background: #fff;
+  width: 350px;
+  height: 450px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #7D7D7D;
+}
+
+.todoForm {
+  display: flex;
+  gap: 10px;
+}
+
+.todoForm input {
+  width: 230px;
+  height: 35px;
+  border: 1px solid #D5D5D5;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px;
+}
+
+.todoForm input:focus {
+  border: 1px solid #00DFAE;
+}
+
+.todoForm button {
+  width: 35px;
+  border: none;
+  border-radius: 5px;
+  color:  #FFFFFF;
+  background-color: #00DFAE;
+  font-size: 16px;
+  cursor: pointer;
+}
+.todoForm button:hover{
+  background-color: #00CDB4;
+}
+
+.todoList {
+  width: 275px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.listItem {
+  width: 100%;
+  display: flex;
+  height: 35px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listItem span {
+  width: 180px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.listItem button {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  color: #D5D5D5;
+  font-size: 18px;
+  cursor: pointer;
+}
+.listItem button:hover{
+  color: #A5A5A5;
+}
+
+.listItem input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 20px;
+  width: 20px;
+  border:1px solid #D5D5D5;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listItem input[type="checkbox"]:after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+  font-size: 15px;
+  color: #ffffff;
+  display: none;
+}
+.listItem input[type="checkbox"]:hover {
+  border:1px solid #00DFAE;
+}
+.listItem input[type="checkbox"]:checked {
+  border: none;
+  background-color: #00DFAE;
+}
+.listItem input[type="checkbox"]:checked::after {
+  display: block;
+}
